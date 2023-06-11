@@ -1,13 +1,23 @@
 return {
-  colorscheme = "catppuccin",
+  colorscheme = "gruvbox-material",
 
   plugins = {
     {
-      "catppuccin/nvim",
-      name = "catppuccin",
+      "sainnhe/gruvbox-material",
+    },
+    {
+      "iamcco/markdown-preview.nvim",
+      event = "BufRead",
       config = function()
-        require("catppuccin").setup {}
+        vim.fn["mkdp#util#install"]()
       end,
     },
+    {
+      "arnamak/stay-centered.nvim",
+      event = "BufRead",
+      config = function()
+        require("stay-centered").setup()
+      end,
+    }
   },
 }
