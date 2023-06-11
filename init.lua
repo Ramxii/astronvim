@@ -1,3 +1,6 @@
+-- Go to for config help
+-- https://github.com/AstroNvim/user_example/tree/main
+
 return {
   colorscheme = "gruvbox-material",
 
