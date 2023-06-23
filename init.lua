@@ -2,9 +2,17 @@
 -- https://github.com/AstroNvim/user_example/tree/main
 
 return {
-  colorscheme = "gruvbox-material",
+  colorscheme = "catppuccin",
+
+  updater = {
+    channel = "nightly",
+  },
 
   plugins = {
+    { "catppuccin/nvim", 
+      name = "catppuccin", 
+      priority = 1000 
+    },
     {
       "sainnhe/gruvbox-material",
     },
