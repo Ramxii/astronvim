@@ -2,12 +2,15 @@
 -- https://github.com/AstroNvim/user_example/tree/main
 
 return {
+  -- Theme
   colorscheme = "catppuccin",
 
+  -- Updater
   updater = {
     channel = "nightly",
   },
 
+  -- Plugins
   plugins = {
     { "catppuccin/nvim", 
       name = "catppuccin", 
@@ -31,4 +34,9 @@ return {
       end,
     }
   },
+
+  -- Icons
+  icons = {
+    GitUntracked = " ",
+  }
 }
