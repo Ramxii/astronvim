@@ -5,19 +5,11 @@ return {
   -- Theme
   colorscheme = "catppuccin",
 
-  -- Updater
-  updater = {
-    channel = "nightly",
-  },
-
   -- Plugins
   plugins = {
     { "catppuccin/nvim", 
       name = "catppuccin", 
       priority = 1000 
-    },
-    {
-      "sainnhe/gruvbox-material",
     },
     {
       "iamcco/markdown-preview.nvim",
